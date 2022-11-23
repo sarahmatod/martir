@@ -10,3 +10,87 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+h1 {
+  font-family: "Sajola-Bold";
+}
+
+h2 {
+  font-family: "Poppins-Bold";
+  font-size: 52px;
+  line-height: 1;
+}
+
+h3 {
+  font-family: "Poppins-Bold";
+  font-size: 28px;
+  text-transform: uppercase;
+
+}
+ p {
+  font-family: "Poppins";
+  font-size: 13px;
+ }
+
+ .bg-offwhite {
+  background-color: $offwhite;
+ }
+
+ .bg-cream {
+  background-color: $cream;
+ }
+
+ .color-bk {
+  color: $black;
+ }
+
+ .color-blu {
+  color: $blue;
+ }
+
+ .color-white {
+  color: $white;
+ }
+
+ @media (max-width:1280px) {
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+ }
+
+ @media (max-width:920px) {
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+ }
+
+ @media (max-width:768px) {
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+ }
+
+ @media (max-width:576px) {
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 11px;
+  }
+ }

@@ -1,0 +1,115 @@
+.accordion {
+  max-width: 1200px;
+  margin: auto;
+  padding: 128px 40px 0 40px;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 0;
+  height: 0;
+  margin-left: 0;
+  background-size: 0;
+}
+
+.accordion-item {
+    border-bottom: 2pt solid $blue;
+}
+
+.artist-line {
+  width: 100%;
+  color: $blue;
+  font-size: 104px;
+  letter-spacing: 0.5px;
+  font-family: "Poppins";
+  margin: 0;
+  padding: 16px 0 0 0;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: ease 0.5s;
+}
+
+.artist-line:hover {
+  letter-spacing: 2px;
+  transition: ease 0.5s;
+}
+
+.accordion-button:focus {
+  color: $blue;
+}
+
+.artist-works {
+  width: 62%;
+  padding: 0;
+}
+
+.artist-works img {
+  width: 15vw;
+  vertical-align:auto;
+
+}
+
+.artist-bio {
+  width: 28%;
+}
+
+@media (max-width: 1199px) {
+  .artist-line {
+    font-size: 72px;
+    transition: ease 0.5s;
+  }
+
+  .accordion {
+    padding: 0 36px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .artist-works {
+    width: 45%;
+  }
+
+  .artist-bio {
+    width: 45%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .artist-line {
+    font-size: 40px;
+    transition: ease 0.5s;
+  }
+
+  .accordion {
+    padding: 0 16px;
+  }
+
+  .artist-bio p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .artist-line {
+    font-size: 32px;
+  }
+
+  .accordion-body {
+    padding-left: 0;
+  }
+
+  .artist-works {
+    width: 30%;
+    flex-direction: column;
+    img {
+      width: 20vw;
+    }
+  }
+
+  .artist-bio {
+    width: 65%;
+  }
+}

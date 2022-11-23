@@ -1,0 +1,99 @@
+<div class="nav hide" data-controller="navtitle" data-action="scroll@window->navtitle#updateTitle" data-navtitle-target="nave">
+  <div class="d-flex justify-content-between align-items-center" style="width:100vw;">
+    <div><%= image_tag "martir_logo_sm.svg" %></div>
+    <div><p><%= link_to "PT", root_path %> | <%= link_to "EN", en_path %></p></div>
+  </div>
+</div>
+
+<div class="main-title pt-3 pb-0 mb-0" data-controller="navtitle" data-action="scroll@window->navtitle#minimalTitle" data-navtitle-target="martir">
+  MARTIR
+</div>
+
+<%# ----------------------------------  %>
+
+
+<div class="hero d-flex justify-content-center align-items-end">
+</div>
+
+<div class="main-subtitle d-flex justify-content-between">
+  <div class="title-mostra">
+    <h2>Mostra de Arte <br>de Tiradentes</h2>
+    <h3>COLEÇÃO TADEU BANDEIRA</h3>
+  </div>
+  <div class="about-martir">
+      <p style="font-style: italic">"Em 1972, fui até a rodoviária e peguei um ônibus até Ouro Preto para conhecer Nello Nuno. Toquei a campainha da sua casa no Largo do Rosário, me apresentei como um simples colegial dos Irmãos Maristas, falei do meu interesse em adquirir um de seus quadros, ainda que com pequeno dinheiro de mesada. Compreendendo a situação, ele me recebeu gentilmente e trouxe até a mim um lindo pôr do sol em Ouro Preto, indagando se estariam bem oito parcelas. Tal pintura integra essa coleção ora aberta à visitação pública."
+      <br><br> <span style="font-style:normal">— Tadeu Bandeira</span></p>
+
+
+  </div>
+</div>
+
+<div class="main-about d-flex justify-content-between align-items-end">
+  <div class="about-tragaluz">
+      <p>INSTITUTO TRAGALUZ <br><br>
+            Localizado na cidade histórica de Tiradentes, Martir é um espaço do Instituto Tragaluz, especialmente delineado para acolher importantes exposições, como a mostra intitulada "Arte Mineira Contemporânea”. A exposição conta com obras de prestigiosos e talentosos artistas, parte da coleção "Tadeu Bandeira”, constituída a partir do olhar do colecionador para a produção mineira a partir dos anos 1970. <br> <br>
+    O Instituto colabora de forma prática e atuante num processo educativo multiforme com mostras artísticas e culturais, exposições, palestras, debates e uma série de iniciativas de cunho social e educacional com ações desde a Primeira Infância. Trata-se de uma associação civil de direito privado, sem fins lucrativos, que almeja com essas ações fomentar outras de natureza semelhante, em pleno exercício de responsabilidade social e cidadania.
+    </p>
+  </div>
+  <div class="about-images">
+  </div>
+</div>
+
+
+<%# -------- mobile --------  %>
+
+<div class="d-sm-none main-about-mobile d-flex justify-content-between align-items-end">
+  <div class="about-images-mobile">
+  </div>
+  <div class="about-tragaluz-mobile">
+    <p>INSTITUTO TRAGALUZ <br><br>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloremque eius dolor illum voluptas, esse at sunt inventore eos eligendi ipsam asperiores minus non mollitia placeat animi natus totam quae! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus distinctio qui autem, explicabo similique excepturi porro vel ipsam deserunt odio minus repellat provident reprehenderit. Architecto tenetur quae odio explicabo vero. </p>
+  </div>
+</div>
+
+<%# ------------------------  %>
+
+
+<div class="d-flex loop justify-content-center align-items-center">
+  <%= image_tag "loop.gif" %>
+</div>
+
+  <div class="artistas-obras bg-cream d-flex justify-content-center align-items-center">
+    <%= image_tag "artistas-obras.svg", class:"artistas-obras-img-desktop" %>
+    <%= image_tag "artistas-obras-mobile.svg", class:"artistas-obras-img-mobile" %>
+  </div>
+
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+
+    <% @artists.each do |artist| %>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading<%= artist.id %>">
+        <button class="artist-line accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<%= artist.id %>" aria-expanded="false" aria-controls="flush-collapse<%= artist.id %>">
+          <%= artist.name %>
+        </button>
+      </h2>
+      <div id="flush-collapse<%= artist.id %>" class="accordion-collapse collapse" aria-labelledby="flush-heading<%= artist.id %>" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body pt-4 d-flex justify-content-between">
+        <div class="artist-works d-flex align-items-start">
+          <%= image_tag "artist-img01.png" %>
+          <%= image_tag "artist-img02.png" %>
+          <%= image_tag "artist-img03.png" %>
+        </div>
+        <div class="artist-bio">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non doloribus pariatur dolorum soluta adipisci vitae! Alias optio aut accusamus deserunt omnis dolores aliquam odio dicta, ullam modi, mollitia iure!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non doloribus pariatur dolorum soluta adipisci vitae! Alias optio aut accusamus deserunt omnis dolores aliquam odio dicta, ullam modi, mollitia iure!</p>
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+
+  </div>
+
+
+
+
+
+<div class="footer" style="height:400px;">
+</div>
