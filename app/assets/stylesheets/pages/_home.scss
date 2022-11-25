@@ -1,5 +1,5 @@
 .nav {
-  padding: 0 64px;
+  background-color: $offwhite;
   position: fixed;
   width: 100%;
   transition: ease 0.5;
@@ -9,7 +9,8 @@
     text-decoration: none;
   }
   img {
-    height: 96px;
+    height: 64px;
+    padding: 8px;
   }
 }
 
@@ -80,12 +81,13 @@
 }
 
 .loop {
-  height: 90vh;
-  img {
   margin-top: 96px;
-  height: 70vh;
-
-} }
+  img {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+}
+}
 
 .artistas-obras {
   margin-top: 96px;
