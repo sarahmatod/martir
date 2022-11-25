@@ -1,8 +1,12 @@
+.body {
+  transition: ease 0.5s;
+}
+
 .nav {
   background-color: $offwhite;
   position: fixed;
   width: 100%;
-  transition: ease 0.5;
+  //-webkit-transition: all 0.5s ease-in-out;
   z-index: 999;
   a {
     color: black;
@@ -16,7 +20,7 @@
 
 .nav.hide {
   display: none;
-  transition: ease 0.5;
+  //-webkit-transition: all 0.5s ease-in-out;
 }
 
 .main-title {
@@ -83,6 +87,7 @@
 .loop {
   margin-top: 96px;
   img {
+    mix-blend-mode: darken;
   max-width: 1200px;
   margin: auto;
   padding: 0 40px;
