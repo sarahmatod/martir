@@ -19,7 +19,12 @@ export default class extends Controller {
   }
 
   minimalTitle() {
-      this.martirTarget.classList.remove("scrolled")
+    this.martirTarget.classList.remove("scrolled")
   }
 
+  backTitle() {
+    if (window.scrollY > 0) {
+      this.martirTarget.classList.remove("scrolled")
+    }
+  }
 }

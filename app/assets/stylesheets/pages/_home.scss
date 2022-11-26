@@ -42,6 +42,7 @@
 
 .hero {
   background-image: asset-url("martir-hero02.png");
+  mix-blend-mode: darken;
   background-size: cover;
   height: 98vh;
   background-position: center top;
@@ -87,7 +88,7 @@
 .loop {
   margin-top: 96px;
   img {
-    mix-blend-mode: darken;
+  mix-blend-mode: darken;
   max-width: 1200px;
   margin: auto;
   padding: 0 40px;
