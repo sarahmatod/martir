@@ -1,7 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
 
-const = document.querySelector(".hero")
-
 // Connects to data-controller="navtitle"
 export default class extends Controller {
 
@@ -20,5 +18,11 @@ export default class extends Controller {
 
   minimalTitle() {
     this.martirTarget.classList.remove("scrolled")
+  }
+
+  backTitle() {
+    if (window.scrollY > 200) {
+      this.martirTarget.classList.remove("scrolled")
+    }
   }
 }
