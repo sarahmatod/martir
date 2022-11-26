@@ -64,6 +64,8 @@
   max-width: 1200px;
   margin: auto;
   padding: 40px 40px 0 40px;
+  padding-bottom: 300px;
+  background-attachment: fixed;
 }
 
 .about-tragaluz {
@@ -86,17 +88,17 @@
 }
 
 .loop {
-  margin-top: 36px;
-  img {
+  background-image: asset-url("martir-loop.gif");
+  height: 100vh;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   mix-blend-mode: darken;
-  max-width: 1000px;
-  margin: auto;
-  padding:0 80px;
+  background-position: center;
   }
-}
 
 .artistas-obras {
-  margin-top: 36px;
+  //margin-top: 36px;
   margin-bottom: 96px;
   height: 98vh;
   border-radius: 48px;
@@ -233,6 +235,12 @@
   .footer img {
     margin-bottom: 32px;
   }
+
+  .loop {
+
+    background-size: 90%;
+
+    }
 }
 
 @media (max-width: 490px) {
