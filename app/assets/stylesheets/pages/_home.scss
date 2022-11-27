@@ -79,11 +79,11 @@
 
 .about-images {
   width: 50%;
-  background-image: asset-url("galeria.png");
+  background-image: asset-url("fachada-martir.png");
   background-size: cover;
-  height: 80vh;
-  background-position: center top;
+  height: 88vh;
   padding: 0;
+  background-position: left bottom;
 }
 
 .breath {
@@ -187,7 +187,7 @@
   }
 
   .about-images {
-    height: 64vh;
+    height: 56vh;
   }
 
   .about-tragaluz {
@@ -219,7 +219,7 @@
   }
 
   .about-images {
-    height: 50vh;
+    height: 56vh;
   }
 
   .about-tragaluz {
@@ -275,10 +275,10 @@
 
   .about-images-mobile {
     width:75%;
-    background-image: asset-url("galeria.png");
+    background-image: asset-url("fachada-martir.png");
     background-size: cover;
-    height: 64vh;
-    background-position: center top;
+    height: 50vh;
+    background-position: left bottom;
     padding: 0;
   }
 
