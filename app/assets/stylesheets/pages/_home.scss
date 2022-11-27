@@ -23,12 +23,17 @@
   //-webkit-transition: all 0.5s ease-in-out;
 }
 
-.main-title {
+.main-title h1 {
   font-size: 25vw;
   line-height: 1;
   font-family: "Sajola-Bold";
   display: flex;
   justify-content: center;
+  transition: ease 0.5s;
+}
+
+.main-title {
+  width: 80vw;
   transition: ease 0.5s;
 }
 
@@ -40,12 +45,20 @@
   //z-index: 2;
 }
 
-.hero {
+.hero-old {
   background-image: asset-url("martir-hero02.png");
   mix-blend-mode: darken;
   background-size: cover;
-  height: 98vh;
-  background-position: center top;
+  height: 99vh;
+  width:100%;
+  background-position: center bottom;
+  padding: 0;
+  margin-top: -140px;
+}
+
+.hero img {
+  mix-blend-mode: darken;
+  width:100vw;
   padding: 0;
   margin-top: -140px;
 }
@@ -240,9 +253,11 @@
   }
 
   .loop {
-
     background-size: 90%;
+    }
 
+    .hero img {
+      margin-top: -80px;
     }
 }
 
@@ -293,6 +308,10 @@
 
   .breath {
     height: 20vh;
+  }
+
+  .hero img {
+    margin-top: -50px;
   }
 
 }
