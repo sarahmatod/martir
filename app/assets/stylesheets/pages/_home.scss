@@ -218,6 +218,10 @@
   .artistas-obras img {
     padding: 80px 0;
   }
+
+  .loop {
+    background-size: 96%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -251,10 +255,6 @@
   .footer img {
     margin-bottom: 32px;
   }
-
-  .loop {
-    background-size: 90%;
-    }
 
     .hero img {
       margin-top: -80px;
@@ -307,11 +307,18 @@
   }
 
   .breath {
-    height: 20vh;
+    height: 0;
+    display:none;
   }
 
   .hero img {
     margin-top: -50px;
   }
+
+  .loop {
+    margin-top: -100px;
+    background-attachment: scroll;
+    margin-bottom: -70px;
+    }
 
 }
