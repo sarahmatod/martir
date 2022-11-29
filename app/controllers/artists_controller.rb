@@ -37,6 +37,6 @@ before_action :set_artist, only: [:show, :edit, :update]
   end
 
   def artist_params
-    params.require(:artist).permit(:name, :bio, photos: [])
+    params.require(:artist).permit(:name, :bio, :about, :exposicao, :critica, photos: [])
   end
 end

@@ -1,0 +1,143 @@
+<div class="artist">
+  <div class="artist-name pt-5">
+    <%= @artist.name %>
+  </div>
+
+  <div class="d-flex justify-content-between pt-3">
+    <div class="artist-menu obras">OBRAS</div>
+    <div class="artist-menu expo-bio-critica d-flex justify-content-between nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <div class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="color:black;">Biografia</button>
+      </div>
+      <div class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="color:black;">Críticas</button>
+      </div>
+      <div class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" style="color:black;">Exposições</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between">
+    <div class="d-flex">
+    </div>
+    <div class="artists-content tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Entre 1984 e 1987, Adrianne Izabelle dos Santos Gallinari estuda na Escola Guignard, juntamente com Rosângela Rennó. Inicia sua atuação artística nessa escola, desenvolvendo produção em desenho e pintura, e experimentando materiais como a cerâmica. Nesse período, conhece os artistas Cao Guimarães e José Bento, entre outros. Em 1997, Gallinari realiza sua primeira animação em vídeo, em Belo Horizonte. No mesmo ano, viaja a Buenos Aires para participar do Programa de Bolsas para Artistas Jovens "Beca Kuitca", lá permanecendo até 2001. Paralelamente ao seu trabalho como artista visual atua na área de ilustração. Nesse campo, cria trabalhos para a revista Bravo, edições de julho 2002 e janeiro 2004, e produz os marcadores de livros da Livraria Cultura, em 2003, ano em que se muda para São Paulo.
+        Adrianne Gallinari desponta nos anos 1990 com trabalhos de pintura e desenho. A pintura de cores fortes do início dessa década desloca-se para um desenho com poucas áreas de cor, composto por silhuetas humanas, formas geométricas e palavras, realizado sobre diferentes suportes. Entre 1997 e 2003, realiza um projeto itinerante de desenhos sobre parede nas cidades de São Paulo, Buenos Aires, Nova York, Pontevedra (Espanha), Fortaleza, Pori (Finlândia) e Belo Horizonte, no qual o desenho se relaciona diretamente com a arquitetura do lugar da mostra. A palavra tem um papel preponderante nesses desenhos, gerando áreas de acúmulo semelhantes à trama de linhas. Nos desenhos sobre papel da Série Vermelha, 2003, a artista retoma o uso predominante da cor, como nas pinturas. Com o guache vermelho revela paisagens e silhuetas do corpo feminino.
+        Em 2006 desenha em nanquim preto sobre tecidos de dimensões diversas, utilizando sutis áreas de cor. Esses trabalhos têm em comum linhas, figuras ou formas geométricas que se desdobram em outras imagens, criando narrativas. Nessas obras, as linhas se repetem ritmadamente, de uma silhueta saem vísceras, o traçado das nervuras de uma folha aparece em outras partes do desenho. O movimento e a narrativa estão presentes de modo mais efetivo nas animações que a artista cria em vídeo/DVD, com base em uma série de desenhos seqüenciados.
+        A obra de Gallinari mantém afinidades com a de artistas como Leonilson, Arthur Bispo do Rosario, Rosana Ricalde e Mira Schendel.
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        A gravura foi o período marcado entre duas fases da pintura. A primeira que ela considera de formação, com as cópias, as naturezas-mortas, o figurativismo, estudos de luz e sombras e perspectivas. (...) Em seguida, um rompimento e o fluir total do inconsciente. A quebra e a entrada na fase atual".
+        Ignácio de Loyola Brandão
+        ANA Horta: pinturas. Apresentação de Ignácio de Loyola Brandão. São Paulo: Galeria de Arte São Paulo, 1984.
+        "A exuberância e intensidade das cores que eclodiu na pintura de Ana Horta antecedeu o rigor e a severidade preto e branco dos caminhos do desenho e da gravura. Foi um tempo fértil: base, alicerce, vigor que estabeleceria a própria essencialidade dos futuros projetos da artista. (...) Perseguindo o seu roteiro, após o momento decisivo no qual se decidiu pintora - tempo/relâmpago em que se encharcou de tintas, de roxos, amarelos, azuis e vermelhos gritantes, tempo em que sustou a censura, transgrediu regras e fórmulas, e se jogou livre, encantada, enfeitiçada na efusão da gestualidade - Ana Horta transpôs a barreira da performance média, lançando-se estrela no firmamento da pintura contemporânea brasileira (...) Em 1986, (...) emergiu uma fase de pintura manifestadamente mais densa, mais consistente, mais enfática. Ao perder a fluidez e se tornar mais matéria, ao dispensar as harmonias do arco-íris, a pintura de Ana Horta ganhou coragem. Como, por exemplo, no uso aberto do preto. Neste tempo, tudo indicava um destino largo e extenso para a jovem artista. (...) Ana perdeu a vida absurdamente, nas tramas de uma contramão".
+        Celma Alvim
+        ALVIM, Celma. Nunca mais tuas cores, Ana Horta. Galeria: revista de arte, São Paulo: Area Editorial, n. 4, p. 20-21, 1987.
+
+        "(...) A pintura de Ana Horta é um intrincado tecido de pinceladas linhas, áreas de matéria-cor, convivência de muitos estados de ação da artista. Harmoniza a convivência das áreas de cálculo com áreas de risco da experiência. Há uma ação liberta despertada na convivência com o mestre Amilcar. É o registro material de sensibilidade e inteligência entrecruzadas em cada tela. Sua Pintura está entre as que fazem da arte um ato de pensar e, ao mesmo tempo, é celebração da sensualidade. A cor é seu caráter de plena realização, prazer e alegria. Há um tempo que vem, vê e vence: conquista o espaço com gesto, registro de descarga de energia na linha iluminadora do relance de um relâmpago. Há um espaço que se faz: constrói o tempo em amplas áreas de pinceladas densas e largas, sedimentando a matéria como superfície iluminada. Ana Horta veio na rapidez feliz da sensualidade realizada, generosa e ampla, mas densa como um relâmpago e seu próprio gesto. Esvaiu-se e permanece juventude. Seu tempo deslocou-se da vida para ser pintura".
+        Paulo Herkenhoff
+        ABRANTES, José Israel; PEDRO, Ivan. Pinturas Ana Horta. Apresentação de Cristiano Paz. Textos de Maria do Carmo Secco et al. Belo Horizonte: Comunicação e Artes, 1989, p. 61.
+      </div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Exposições Individuais
+        1989 - Penápolis SP - Individual, na Itaugaleria
+        1990 - Belo Horizonte MG - Individual, na Sala Arlinda Correa, Palácio das Artes
+        1992 - Belo Horizonte MG - Individual, no Fernando Pedro Escritório de Arte
+        1993 - Goiânia GO - Individual, na Marina Potrich Galeria
+        1997 - Belo Horizonte MG - Individual, na Casa Cambuquira
+        1997 - São Paulo SP - Projeto ABRA/Coca-Cola, no Paço das Artes
+        2000 - Belo Horizonte MG - Individual, na Galeria Celma Albuquerque
+        2000 - Buenos Aires (Argentina) - Individual, no Centro Cultural Borges
+        2000 - Nova York (Estados Unidos) - Individual, no The Drawing Center
+        2001 - Buenos Aires (Argentina) - Individual, na Ruth Benzacar Galería de Arte
+        2001 - São Paulo SP - Individual, na Casa Triângulo
+        2003 - Belo Horizonte MG - Individual, no Museu de Arte da Pampulha
+        2003 - São Paulo SP - Individual, na Casa Triângulo
+        2005 - Belo Horizonte MG - Individual, na Galeria Celma Albuquerque
+        2007 - São Paulo SP - Individual, na Casa Triângulo
+
+        Exposições Coletivas
+
+        1983 - Salvador BA - Coletiva, no MAM/BA
+        1985 - Salvador BA - Coletiva, no MAM/BA
+        1986 - Belo Horizonte MG - 2º Salão da Aeronáutica
+        1986 - Belo Horizonte MG - Preciosidades para colecionadores, no CCBH
+        1986 - Curitiba PR - 43º Salão Paranaense, no MAC/PR
+        1986 - Viçosa MG - 7º Salão Nello Nuno
+        1987 - Belo Horizonte MG - 3º Salão da Aeronáutica
+        1987 - Belo Horizonte MG - Lance de Dados, na Galeria do IAB
+        1987 - São Paulo SP - 6º Salão Universitário, na Faculdade Santa Marcelina
+        1988 - Belo Horizonte MG - 4º Salão da Aeronáutica
+        1988 - Belo Horizonte MG - Coletiva, no Espaço Cultural do Círculo Militar
+        1988 - Ribeirão Preto SP - 14º Salão de Arte Contemporânea de Ribeirão Preto
+        1989 - Belo Horizonte MG - 21º Salão Nacional da Prefeitura de Belo Horizonte
+        1989 - Belo Horizonte MG - Centenário de Jean Cocteau, no Palácio das Artes
+        1989 - Belo Horizonte MG - MG - Ocupação, no Guilden Espaço Cultural
+        1990 - Belo Horizonte MG - 22º Salão Nacional da Prefeitura de Belo Horizonte - Prêmio Amigas da Cultura
+        1990 - Belo Horizonte MG - Futebol de Salão, no Espaço Index
+        1990 - São Paulo SP - Prospecção 90, na Subdistrito Comercial de Arte
+        1991 - Belo Horizonte MG - 23º Salão Nacional da Prefeitura de Belo Horizonte
+        1991 - Belo Horizonte MG - A Prova dos Nove, na Companhia de Energia de Minas Gerais. Espaço Cultural Galeria de Arte
+        1991 - Belo Horizonte MG - Coletiva, na Galeria Manoel Macedo
+        1991 - Belo Horizonte MG - Coletiva, na Casa Horta
+        1991 - Belo Horizonte MG - Paixões Secretas, no Museu Mineiro
+        1991 - Vitória ES - Instalação no Porto
+        1992 - Belo Horizonte MG - 22º Salão Nacional de Arte, no Museu de Arte da Pampulha - prêmio aquisição
+        1992 - Belo Horizonte MG - Paixões Secretas, no Museu Mineiro
+        1992 - Belo Horizonte MG - Utopias Contemporâneas, na Fundação Clóvis Salgado. Palácio das Artes
+        1992 - Salvador BA - A Montanha e o Mar, na Galeria 3M do MAM/BA
+        1993 - Belo Horizonte MG - O Inconsciente Freudiano e o Nosso, no Minascentro
+        1994 - Belém PA - 3º Salão Paraense de Arte Contemporânea
+        1994 - Belo Horizonte MG - Coletiva, no Museu Mineiro
+        1994 - Belo Horizonte MG - Cor e Luz, no Espaço Cultural Cemig
+        1994 - Belo Horizonte MG - Guignard: 50 anos de uma escola de arte, na Galeria Vidyã
+        1994 - Belo Horizonte MG - Objeto Urbano, no MAP
+        1994 - Belo Horizonte MG - Retrospectiva Fernando Pedro Escritório de Arte, no Museu Mineiro
+        1994 - Curitiba PR - 10ª Mostra de Desenho Brasileiro, no MAC/PR
+        1994 - Salvador BA - 1º Salão MAM-Bahia de Artes Plásticas, no MAM/BA
+        1994 - Vitória ES - A Ética e a Consolidação da Democracia
+        1995 - Belo Horizonte MG - Guaicurus, no Centro Cultural UFMG
+        1995 - Nova York (Estados Unidos) - Latin American Book Arts, no Center for Book Arts
+        1996 - Belém PA - 2º Salão Unama de Pequenos Formatos, na Universidade da Amazônia. Galeria de Arte
+        1996 - Belo Horizonte MG - Mostra de Artes Plásticas FID, na Galeria de Arte Sesiminas
+        1996 - Salvador BA - 3º Salão MAM-Bahia, no MAM/BA
+        1996 - São Paulo SP - Antarctica Artes com a Folha, no Pavilhão Manoel da Nóbrega
+        1997 - Belo Horizonte MG - Prospecções: Arte nos Anos 80 e 90, no Palácio das Artes
+        1997 - Curitiba PR - A Arte Contemporânea da Gravura, no Museu Metropolitano de Arte de Curitiba
+        1997 - Salvador BA - 4º Salão MAM-Bahia, no MAM/BA
+        1998 - Buenos Aires (Argentina) - 4 Artistas da Bolsa Kuitca, no Natan Spacio de Arte
+        1998 - Buenos Aires (Argentina) - Estación Retiro
+        1999 - Buenos Aires (Argentina) - Cual es tu fetiche, no Spacio Juana de Arco
+        1999 - Buenos Aires (Argentina) - Open Studio - Bolsa Kuitca, no Centro Cultural Borges
+        2000 - Buenos Aires (Argentina) - 1ª Bienal Bridgestone, no Centro Cultural Borges - primeiro prêmio
+        2000 - Buenos Aires (Argentina) - Open Studio Bolsa Kuitca, no Centro Cultural Borges
+        2000 - Pontevedra (Espanha) - 26ª Bienal de Arte de Pontevedra, no Pazo da Cultura de Pontevedra e na Facultade de Ciencias Sociais
+        2000 - São Paulo SP - Projeto ABRA/Coca-Cola, no Paço das Artes
+        2001 - Buenos Aires (Argentina) - Bienal del Dibujo Contemporáneo, La Casona de los Oliveiras
+        2002 - Curitiba PR - Matéria Prima, no NovoMuseu
+        2002 - Curitiba PR - Obras do Faxinal das Artes, no MAC/PR
+        2002 - Fortaleza CE - Bienal Ceará América
+        2002 - Nova York (Estados Unidos) - 25 Years of The Drawing Center, no Drawing Center
+        2002 - Pori (Finlândia) - Transformer, no Pori Art Museum
+        2002 - São Paulo SP - Paralela, no Galpão localizado na Avenida Matarazzo, 530, São Paulo. Exposição idealizada e organizada em conjunto pelas galerias Fortes Vilaça, Luisa Strina, Casa Triângulo e Brito Cimino
+        2003 - Brasília DF - Desenho: traço e espaço, no Espaço Cultural Contemporâneo Venâncio
+        2003 - Hamburgo (Alemanha) - R1: Ausstellung, Adrianne Gallinari, Heide Henrichs, Patrick Lebret
+        2003 - Iowa City (Estados Unidos) - Layers of Brazilian Art, na Faulconer Gallery
+        2003 - Madri (Espanha) - Arco 03
+        2003 - Pori (Finlândia) - Flip Pocket-Sized Stories, no Pori Art Museum
+        2003 - São Paulo SP - A Subversão dos Meios, no Itaú Cultural
+        2003 - São Paulo SP - Casa Triângulo, na Casa Triângulo
+        2003 - São Paulo SP - Ordenação e Vertigem, no CCBB
+        2004 - Belo Horizonte MG - Pampulha, Obra Colecionada: 1943-2003, no Museu de Arte da Pampulha
+        2004 - São Paulo SP - Paralela 2004
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="teste d-flex">
+      <% @artist.photos.each do |photo| %>
+        <%= cl_image_tag photo.key %>
+      <% end %>
+    </div>

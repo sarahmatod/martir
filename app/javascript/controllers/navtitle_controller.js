@@ -3,16 +3,16 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="navtitle"
 export default class extends Controller {
 
-  static targets = ["nave", "martir"]
+  static targets = ["navigation", "martir"]
 
   connect() {
   }
 
   updateTitle() {
     if (window.scrollY > 200) {
-      this.naveTarget.classList.remove("hide")
+      this.navigationTarget.classList.remove("hide")
     } else {
-      this.naveTarget.classList.add("hide")
+      this.navigationTarget.classList.add("hide")
     }
   }
 

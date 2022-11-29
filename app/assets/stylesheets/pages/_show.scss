@@ -1,0 +1,41 @@
+.artist {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 48px;
+}
+
+.artist-name {
+  color: $blue;
+  font-size: 72px;
+  letter-spacing: 0.5px;
+  font-family: "Poppins";
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 57%;
+}
+
+.nav-link {
+  padding: 0;
+  padding-top: 6px;
+}
+
+.artist-menu {
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  border-top: 1pt solid black;
+}
+
+.expo-bio-critica,
+.artists-content {
+  width: 39%;
+}
+
+.obras {
+  width: 57%;
+}
+
+.teste {
+  width: 60%;
+}
