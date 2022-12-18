@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
-skip_before_action :authenticate_user!
+skip_before_action :authenticate_user!, :verify_authenticity_token
 before_action :set_artist, only: [:show, :edit, :update]
 
 
