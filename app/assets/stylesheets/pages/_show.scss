@@ -2,40 +2,128 @@
   max-width: 1280px;
   margin: auto;
   padding: 0 48px;
+  padding-top: 40px;
 }
 
 .artist-name {
   color: $blue;
-  font-size: 72px;
+  font-size: 64px;
   letter-spacing: 0.5px;
-  font-family: "Poppins";
+  //font-family: "Poppins";
   margin: 0;
+  padding: 0;
   line-height: 1;
   text-transform: uppercase;
-  width: 57%;
-}
-
-.nav-link {
-  padding: 0;
-  padding-top: 6px;
 }
 
 .artist-menu {
+  border-top: 1pt solid black;
+  padding: 0;
+  padding-top: 8px;
+}
+
+.artist-menu-title {
+  padding: 0;
+  padding-top: 8px;
   text-transform: uppercase;
   color: black;
   font-size: 14px;
-  border-top: 1pt solid black;
 }
 
-.expo-bio-critica,
-.artists-content {
-  width: 39%;
+
+
+.nav-pills .nav-link.active {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
-.obras {
-  width: 57%;
+.tab-pane {
+  font-size: 14px;
 }
 
-.teste {
-  width: 60%;
+.obras-pictures{
+  flex-wrap: wrap;
+    img {
+      padding: 0 20px 20px 0;
+      mix-blend-mode: darken;
+    }
+}
+
+.wi-50 {
+  width: 50%;
+}
+
+.wi-100 {
+  width: 100%;
+}
+
+
+.carousel {
+  position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+}
+
+.prev-icon {
+  position: absolute;
+  z-index: 999;
+  top: -34px;
+  left: 600%;
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.next-icon {
+  position: absolute;
+  z-index: 999;
+  top: -34px;
+  right: 0;
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .artist-name {
+    font-size: 52px;
+  }
+
+  .tab-pane {
+    font-size: 12px;
+  }
+
+  .artist-menu-title {
+    font-size: 12px;
+  }
+
+  .prev-icon {
+    position: absolute;
+    z-index: 999;
+    top: -34px;
+    left: 540%;
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+
+}
+
+@media (max-width: 1080px) {
+  .artist-name {
+    font-size: 40px;
+  }
+}
+
+
+@media (max-width: 840px) {
+  .artist-name {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 840px) {
+  .artist-name {
+    font-size: 26px;
+  }
 }

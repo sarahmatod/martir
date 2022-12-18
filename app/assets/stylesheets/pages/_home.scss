@@ -11,29 +11,61 @@
   a {
     color: black;
     text-decoration: none;
+    margin-left: 24px;
   }
   img {
     height: 64px;
-    padding: 8px;
+    padding: 8px 0 8px 0;
   }
 }
 
 .navigation.hide {
-  display: none;
+  display: none!important;
   //-webkit-transition: all 0.5s ease-in-out;
 }
+
+.container-nav {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 40px 0 16px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: $blue;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $blue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 .main-title h1 {
   font-size: 25vw;
   line-height: 1;
-  font-family: "Sajola-Bold";
+  //font-family: "Sajola-Bold";
   display: flex;
   justify-content: center;
   transition: ease 0.5s;
 }
 
 .main-title {
-  width: 80vw;
+  width: 76vw;
   transition: ease 0.5s;
 }
 
@@ -64,7 +96,7 @@
 }
 
 .main-subtitle {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
   padding: 128px 40px 0 40px;
 }
@@ -74,7 +106,7 @@
 }
 
 .main-about {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
   padding: 40px 40px 0 40px;
   background-attachment: fixed;
@@ -100,13 +132,13 @@
 }
 
 .breath {
-  height: 30vh;
+  height: 10vh;
 }
 
 .loop {
   background-image: asset-url("martir-loop.gif");
   height: 100vh;
-  background-size: 60%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   mix-blend-mode: darken;
@@ -116,7 +148,7 @@
 .artistas-obras {
   //margin-top: 36px;
   margin-bottom: 96px;
-  height: 98vh;
+  height: 120vh;
   border-radius: 48px;
   padding: 0;
 }
@@ -125,10 +157,30 @@
   width: 100vw;
 }
 
+.box-tragaluz {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 128px;
+  padding: 40px;
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      width: 100%;
+    }
+    img {
+      width: 36%;
+      //border-radius: 16px;
+    }
+    p {
+      width: 54%;
+    }
+}
+
 .footer {
   width: 100%;
   margin-top: 124px;
-  background-color: $cream;
+  background-color: $orange;
   border-radius: 32px 32px 0 0;
   height: 160px;
   font-size: 12px;
@@ -136,9 +188,10 @@
 }
 
 .footer .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
   padding: 32px;
+  //height: 400px;
 }
 
 
@@ -264,14 +317,15 @@
 @media (max-width: 490px) {
   .main-subtitle {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     padding-right: 36px;
+    padding-left: 36px;
   }
   .title-mostra {
-    width:75%;
+    width:100%;
   }
   .about-martir {
-    width:75%;
+    width:100%;
     padding-top: 24px;
   }
 
@@ -282,23 +336,21 @@
   }
 
   .main-about-mobile {
-    flex-direction: column;
-    align-items: flex-end;
     padding-right: 36px;
-    padding-left: 24px;
+    padding-left: 36px;
   }
 
   .about-images-mobile {
-    width:75%;
+    width:100%;
     background-image: asset-url("fachada-martir.png");
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
     background-position: left bottom;
     padding: 0;
   }
 
   .about-tragaluz-mobile {
-    width:75%;
+    width:100%;
     padding-top: 36px;
   }
 

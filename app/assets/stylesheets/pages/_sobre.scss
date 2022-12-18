@@ -1,0 +1,73 @@
+.sobre {
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px;
+  padding-top: 120px;
+    h4 {
+      line-height: 1;
+    }
+}
+
+.logo-sobre {
+  height: 72px;
+  margin-right: 32px;
+}
+
+.sobre-horarios {
+  width:60%;
+}
+
+@media (max-width: 991px) {
+  .logo-sobre {
+    height: 54px;
+    margin-right: 16px;
+  }
+
+  .sobre {
+    h4 {
+    font-size: 17px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .sobre-txt p {
+    padding-left: 32px;
+  }
+
+  .sobre-horarios {
+    width:50%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .sobre-txt p {
+    padding-left: 0;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 490px) {
+
+  .logo-sobre {
+    height: 40px;
+    margin-right: 12px;
+  }
+
+  .sobre {
+    padding: 24px;
+    padding-top: 120px;
+    h4 {
+    font-size: 16px;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
+
+  .navigation img {
+    padding-left: 0;
+  }
+}

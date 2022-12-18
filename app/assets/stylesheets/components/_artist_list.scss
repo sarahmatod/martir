@@ -1,5 +1,5 @@
 .accordion {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
   padding: 40px 40px 0 40px;
 }
@@ -22,7 +22,7 @@
   color: $blue;
   font-size: 104px;
   letter-spacing: 0.5px;
-  font-family: "Poppins";
+  //font-family: "Poppins";
   margin: 0;
   padding: 16px 0 0 0;
   line-height: 1;
@@ -52,6 +52,25 @@
 
 .artist-bio {
   width: 34%;
+  padding-bottom: 24px;
+}
+
+.btn-vermais{
+  color: $blue;
+  text-decoration: none;
+  padding: 0;
+  padding-bottom: 2px;
+  border-bottom: 3px solid $blue;
+  transition: ease 0.5s;
+  margin-right: 6px;
+    &:hover {
+      letter-spacing: 1px;
+      transition: ease 0.5s;
+    }
+}
+
+a {
+  text-decoration: none;
 }
 
 

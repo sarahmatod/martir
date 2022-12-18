@@ -12,25 +12,32 @@
 @import "pages/index";
 
 
-h1 {
-  font-family: "Sajola-Bold";
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 h2 {
-  font-family: "Poppins-Bold";
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   font-size: 52px;
   line-height: 1;
 }
 
 h3 {
-  font-family: "Poppins-Bold";
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 28px;
   text-transform: uppercase;
 
 }
  p {
   font-family: "Poppins";
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
  }
 
  .bg-offwhite {
@@ -51,6 +58,10 @@ h3 {
 
  .color-white {
   color: $white;
+ }
+
+ .row > * {
+  padding: 0;
  }
 
  @media (max-width:1280px) {

@@ -1,54 +1,7 @@
-// Import Google fonts
-//@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
-
-@font-face {
-  font-family: 'Archia';
-  src: font-url('archia-regular-webfont.ttf');
-  src: font-url('archia-regular-webfont.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "Sajola-Bold";
-  src: font-url('sajola_bold-webfont.woff') format('woff'),
-       font-url('sajola_bold-webfont.woff2') format('woff2'),
-       font-url('Sajola-Bold.otf') format('opentype');
-}
-
-@font-face {
-  font-family: "Sajola";
-  src: font-url('Sajola.otf'),
-       font-url('Sajola.otf') format('opentype'),
-       font-url('sajola-webfont.woff') format('woff'),
-       font-url('sajola-webfont.woff2') format('woff2'),
-}
-
-@font-face {
-  font-family: "Poppins-Bold";
-  src: font-url('poppins-semibold-webfont.woff') format('woff'),
-       font-url('poppins-semibold-webfont.woff2') format('woff2'),
-       font-url('Poppins-SemiBold.ttf') format('truetype');
-
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: font-url('poppins-regular-webfont.woff') format('woff'),
-       font-url('poppins-regular-webfont.woff2') format('woff2'),
-       font-url('Poppins-Regular.ttf') format('truetype');
-}
-
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
 
 // Define fonts for body and headers
-$body-font: "Poppins", "Helvetica", "sans-serif";
-$headers-font: "Sajola-Bold", "Helvetica", "sans-serif";
+//$body-font: "Poppins", "Helvetica", "sans-serif";
+//$headers-font: "Sajola-Bold", "Helvetica", "sans-serif";

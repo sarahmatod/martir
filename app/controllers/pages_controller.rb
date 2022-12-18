@@ -4,4 +4,8 @@ class PagesController < ApplicationController
   def en
     @artists = Artist.all
   end
+
+  def sobre
+    @artist = Artist.first
+  end
 end

@@ -15,8 +15,6 @@ before_action :set_artist, only: [:show, :edit, :update]
   def index
     @everybody = Artist.all
     @artists = @everybody.sort_alphabetical_by(&:name)
-
-
   end
 
   def show
@@ -27,13 +25,13 @@ before_action :set_artist, only: [:show, :edit, :update]
 
   def update
     @artist.update(artist_params)
-    redirect_to artists_path
+    redirect_to artist_path(@artist)
   end
 
   private
 
   def set_artist
-    @artist = Artist.find(params[:id])
+    @artist = Artist.friendly.find_by!(slug: params[:slug])
   end
 
   def artist_params
