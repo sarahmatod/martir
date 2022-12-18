@@ -32,6 +32,7 @@ before_action :set_artist, only: [:show, :edit, :update]
 
   def set_artist
     @artist = Artist.friendly.find_by!(slug: params[:slug])
+
   end
 
   def artist_params

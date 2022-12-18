@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  get "en", to: "pages#en"
+  get "sobre", to: "pages#sobre"
+
   # Read all
   root to: 'artists#index'
   # Create
@@ -12,8 +15,6 @@ Rails.application.routes.draw do
   get '/:slug/edit', to: 'artists#edit'
   patch  '/:slug',      to: "artists#update"
 
-  get "en", to: "pages#en"
-  get "sobre", to: "pages#sobre"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
