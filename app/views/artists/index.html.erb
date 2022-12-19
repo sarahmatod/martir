@@ -2,9 +2,9 @@
   <div class="container-nav">
     <div class="d-flex justify-content-between align-items-center">
       <%= link_to image_tag("martir_logo_sm.svg"), root_path %>
-      <div class="m-0 p-0">
-        <%= link_to "SOBRE", sobre_path, class:"hover-underline-animation" %>
-        <%= link_to "INSTITUTO TRAGALUZ", sobre_path, class:"hover-underline-animation" %>
+      <div class="m-0 p-0 d-flex">
+        <%# link_to "SOBRE", sobre_path, class:"hover-underline-animation" %> <p style="margin-right: 20px;">SOBRE</p>
+        <%# link_to "INSTITUTO TRAGALUZ", sobre_path, class:"hover-underline-animation" %> <p>INSTITUTO TRAGALUZ</p>
       </div>
     </div>
   </div>
@@ -85,11 +85,11 @@
             <% end %>
           </div>
           <div class="artist-bio">
-            <p><%= artist.bio %></p>
+            <p><%= simple_format(artist.bio) %></p>
             <br>
-            <%= link_to artist_path(artist) do %>
+            <%# link_to artist_path(artist) do %>
             <span class="btn-vermais">VER MAIS</span> <%= image_tag('arrow.svg') %>
-            <% end %>
+            <%# end %>
           </div>
         </div>
       </div>
@@ -105,7 +105,13 @@
         <h3>INSTITUTO <br> TRAGALUZ</h3>
       </div>
         <div class="col-8 d-flex justify-content-between">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis dignissimos vero eos! Nam ad expedita illo possimus laudantium. Architecto, vel. Quis distinctio minima, molestias pariatur ut voluptate corporis eum perspiciatis. <br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br> <br> Sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam a impedit quisquam cupiditate ducimus dolores tempora quos fugit. Quis distinctio minima, molestias pariatur ut voluptate corporis eum perspiciatis. </p>
+          <p>
+            Como formar ideias, criar, criticar, crescer e, se necessário, transformá-las em "conhecimento"? E como "conhecer” se não estivermos inseridos em um processo educativo contínuo e multiforme, utilizando os mais diversos e diferentes recursos?
+            <br><br>
+            O Instituto Tragaluz colabora de forma prática e atuante com mostras artísticas e culturais, exposições, palestras, debates e uma série de iniciativas de cunho social e educacional com ações desde a Primeira Infância.
+            <br><br>
+            Localizado na cidade histórica de Tiradentes, trata-se de uma associação civil de direito privado, sem fins lucrativos, que almeja com essas ações fomentar outras de natureza semelhante, em pleno exercício de responsabilidade social e cidadania.
+          </p>
           <%= image_tag "fachada-martir.png" %>
         </div>
     </div>

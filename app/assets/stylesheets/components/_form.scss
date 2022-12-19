@@ -1,0 +1,17 @@
+textarea.form-control {
+  height: 300px;
+  &:focus {
+    border: 1pt solid gray;
+  }
+}
+
+.btn-formulario {
+  margin-top: 32px;
+  border: 1pt solid gray;
+  padding: 8px 24px;
+  border-radius: 16px;
+  &:hover {
+    background-color: $cream;
+    border: 1pt solid gray;
+  }
+}
