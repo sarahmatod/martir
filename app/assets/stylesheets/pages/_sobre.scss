@@ -35,10 +35,6 @@
   .sobre-txt p {
     padding-left: 32px;
   }
-
-  .sobre-horarios {
-    width:50%;
-  }
 }
 
 @media (max-width: 767px) {
@@ -60,14 +56,17 @@
     padding: 24px;
     padding-top: 120px;
     h4 {
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 4px;
     }
     p {
-      font-size: 11px;
+      font-size: 10px;
     }
   }
 
-  .navigation img {
-    padding-left: 0;
+  .tadeu-sm {
+    font-size: 8px;
   }
+
+
 }
