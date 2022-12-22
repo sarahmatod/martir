@@ -1,20 +1,31 @@
-<div class="container p-5" style="max-width:1000px; margin:auto;">
-
-  <%= simple_form_for(@artist) do |f| %>
-  <div class="form-inputs">
-  <%= f.input :name %>
-  <%= f.input :bio, as: :text %>
-  <%= f.input :about, as: :text %>
-  <%= f.input :exposicao, as: :text %>
-  <%= f.input :critica, as: :text %>
-  <% unless @artist.photos.attached? %>
-  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <% end %>
+<div class="navigation">
+  <div class="martir-container d-flex justify-content-between align-items-center">
+      <%= link_to image_tag("martir_logo_sm.svg"), root_path %>
+      <div class="menu m-0 p-0 d-flex">
+        <%# link_to "SOBRE", sobre_path, class:"hover-underline-animation" %>
+        <%# link_to "INSTITUTO TRAGALUZ", sobre_path, class:"hover-underline-animation" %>
+      </div>
+    </div>
 </div>
 
-<div class="form-actions">
-  <%= f.button :submit, "Atualizar", class: 'btn-formulario' %>
-</div>
-<% end %>
+<div class="martir-container d-flex" style="padding-top: 120px;">
+  <h4 style="margin-right: 32px;">Editar</h4>
+  <div class="container" style="max-width:1000px; margin:auto;">
+    <%= simple_form_for(@artist) do |f| %>
+      <div class="form-inputs">
+        <%= f.input :name %>
+        <%= f.input :bio, as: :text %>
+        <%= f.input :about, as: :text %>
+        <%= f.input :exposicao, as: :text %>
+        <%= f.input :critica, as: :text %>
+        <% unless @artist.photos.attached? %>
+        <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+        <% end %>
+      </div>
 
+      <div class="form-actions">
+        <%= f.button :submit, "Atualizar", class: 'btn-formulario' %>
+      </div>
+    <% end %>
+  </div>
 </div>

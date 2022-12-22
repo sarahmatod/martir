@@ -79,20 +79,24 @@
         </button>
       </h2>
       <div id="flush-collapse<%= artist.id %>" class="accordion-collapse collapse" aria-labelledby="flush-heading<%= artist.id %>" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body p-0 pt-4 pb-4 d-flex justify-content-between">
-          <div class="artist-works d-flex align-items-start">
-            <% artist.photos.each do |photo| %>
-            <%= cl_image_tag photo.key %>
+          <div class="accordion-body p-0 pt-4 pb-4 d-flex justify-content-between">
+            <% if artist.photos.count >= 1 %>
+              <div class="artist-works d-flex align-items-start">
+                <% artist.photos.each do |photo| %>
+                <%= cl_image_tag photo.key %>
+                <% end %>
+              </div>
             <% end %>
+            <div class="artist-bio">
+              <p><%= simple_format(artist.bio) %></p>
+              <br>
+              <%# link_to artist_path(artist) do %>
+              <span class="btn-vermais">VER MAIS</span> <%= image_tag('arrow.svg') %>
+              <%# end %>
+            </div>
+
           </div>
-          <div class="artist-bio">
-            <p><%= simple_format(artist.bio) %></p>
-            <br>
-            <%# link_to artist_path(artist) do %>
-            <span class="btn-vermais">VER MAIS</span> <%= image_tag('arrow.svg') %>
-            <%# end %>
-          </div>
-        </div>
+
       </div>
     </div>
     <% end %>

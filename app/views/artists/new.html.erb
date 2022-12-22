@@ -1,1 +1,14 @@
-<%= render "form", artist: @artist %>
+<div class="navigation">
+  <div class="martir-container d-flex justify-content-between align-items-center">
+      <%= link_to image_tag("martir_logo_sm.svg"), root_path %>
+      <div class="menu m-0 p-0 d-flex">
+        <%# link_to "SOBRE", sobre_path, class:"hover-underline-animation" %>
+        <%# link_to "INSTITUTO TRAGALUZ", sobre_path, class:"hover-underline-animation" %>
+      </div>
+    </div>
+</div>
+
+<div class="martir-container d-flex" style="padding-top: 120px;">
+  <h4 style="margin-right: 32px;">Novos <br>Artistas</h4>
+  <%= render "form", artist: @artist %>
+</div>
