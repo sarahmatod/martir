@@ -1,18 +1,16 @@
 <div class="hide navigation" data-controller="navtitle" data-action="scroll@window->navtitle#updateTitle" data-navtitle-target="navigation">
-  <div class="container-nav">
-    <div class="d-flex justify-content-between align-items-center">
+  <div class="martir-container d-flex justify-content-between align-items-center">
       <%= link_to image_tag("martir_logo_sm.svg"), root_path %>
-      <div class="m-0 p-0 d-flex">
+      <div class="menu m-0 p-0 d-flex">
         <%= link_to "SOBRE", sobre_path, class:"hover-underline-animation" %>
         <%= link_to "INSTITUTO TRAGALUZ", sobre_path, class:"hover-underline-animation" %>
       </div>
     </div>
-  </div>
 </div>
 
 
-   <div class="d-flex justify-content-center pt-3 pb-3 mb-0 main-title-t">
-    <%= image_tag "martir_logo_footer.svg" %>
+   <div class="martir-container d-flex justify-content-center pt-3 pb-3 mb-0">
+    <%= image_tag "martir_logo_footer.svg", class: "main-title-svg" %>
   </div>
 
   <%# div comentada sem o javascript do titulo  %>
@@ -24,7 +22,8 @@
     <%= image_tag "martir-hero02.png" %>
   </div>
 
-  <div class="main-subtitle d-flex justify-content-between">
+
+  <div class="martir-container main-subtitle d-flex justify-content-between">
     <div class="title-mostra">
       <h2>Mostra de Arte <br>de Tiradentes</h2>
       <h3>COLEÇÃO TADEU BANDEIRA</h3>
@@ -34,9 +33,9 @@
     </div>
   </div>
 
-  <div class="main-about d-flex justify-content-between align-items-end">
-    <div class="about-tragaluz">
-      <p style="font-style: italic">"Em 1972, fui até a rodoviária e peguei um ônibus até Ouro Preto para conhecer Nello Nuno. Toquei a campainha da sua casa no Largo do Rosário, me apresentei como um simples colegial dos Irmãos Maristas, falei do meu interesse em adquirir um de seus quadros, ainda que com pequeno dinheiro de mesada. Compreendendo a situação, ele me recebeu gentilmente e trouxe até a mim um lindo pôr do sol em Ouro Preto, indagando se estariam bem oito parcelas. Tal pintura integra essa coleção ora aberta à visitação pública."
+  <div class="martir-container main-about d-none d-sm-flex justify-content-between align-items-end">
+    <div class="about-bandeira">
+      <p>"Em 1972, fui até a rodoviária e peguei um ônibus até Ouro Preto para conhecer Nello Nuno. Toquei a campainha da sua casa no Largo do Rosário, me apresentei como um simples colegial dos Irmãos Maristas, falei do meu interesse em adquirir um de seus quadros, ainda que com pequeno dinheiro de mesada. Compreendendo a situação, ele me recebeu gentilmente e trouxe até a mim um lindo pôr do sol em Ouro Preto, indagando se estariam bem oito parcelas. Tal pintura integra essa coleção ora aberta à visitação pública."
         <br><br> <span style="font-style:normal">— Tadeu Bandeira</span>
       </p>
     </div>
@@ -47,10 +46,10 @@
 
   <%# -------- mobile --------  %>
 
-  <div class="d-sm-none main-about-mobile d-flex flex-column justify-content-between align-items-center">
+  <div class="martir-container d-sm-none main-about-mobile d-flex flex-column justify-content-between align-items-center">
     <div class="about-images-mobile">
     </div>
-    <div class="about-tragaluz-mobile">
+    <div class="about-bandeira-mobile">
       <p>INSTITUTO TRAGALUZ <br><br>
       Localizado na cidade histórica de Tiradentes, Martir é um espaço do Instituto Tragaluz, especialmente delineado para acolher importantes exposições, como a mostra intitulada "Arte Mineira Contemporânea”. A exposição conta com obras de prestigiosos e talentosos artistas, parte da coleção "Tadeu Bandeira”, constituída a partir do olhar do colecionador para a produção mineira a partir dos anos 1970. <br> <br>
       O Instituto colabora de forma prática e atuante num processo educativo multiforme com mostras artísticas e culturais, exposições, palestras, debates e uma série de iniciativas de cunho social e educacional com ações desde a Primeira Infância. Trata-se de uma associação civil de direito privado, sem fins lucrativos, que almeja com essas ações fomentar outras de natureza semelhante, em pleno exercício de responsabilidade social e cidadania.
@@ -58,17 +57,19 @@
   </div>
 
   <%# ------------------------  %>
+
   <div class="breath"></div>
+
 
   <div class="d-flex loop justify-content-center align-items-center">
   </div>
 
   <div class="artistas-obras bg-cream d-flex justify-content-center align-items-center">
-    <%= image_tag "artistas-obras.svg", class:"artistas-obras-img-desktop" %>
-    <%= image_tag "artistas-obras-mobile.svg", class:"artistas-obras-img-mobile" %>
+    <%= image_tag "artistas-obras.svg", class:"d-none d-lg-block artistas-obras-img-desktop" %>
+    <%= image_tag "artistas-obras-mobile.svg", class:"d-block d-lg-none artistas-obras-img-mobile" %>
   </div>
 
-  <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="martir-container accordion accordion-flush" id="accordionFlushExample">
 
     <% @artists.each do |artist| %>
     <div class="accordion-item">
@@ -99,12 +100,11 @@
 
   </div>
 
-  <div class="box-tragaluz row">
-    <div class="row bg-cream p-5" style="border-radius:24px;">
-      <div class="col-4">
+  <div class="martir-container box-tragaluz">
+    <div class="d-flex justify-content-between box-tragaluz-content bg-cream p-4 p-sm-5" style="border-radius:24px;">
+
         <h3>INSTITUTO <br> TRAGALUZ</h3>
-      </div>
-        <div class="col-8 d-flex justify-content-between">
+
           <p>
             Como formar ideias, criar, criticar, crescer e, se necessário, transformá-las em "conhecimento"? E como "conhecer” se não estivermos inseridos em um processo educativo contínuo e multiforme, utilizando os mais diversos e diferentes recursos?
             <br><br>
@@ -112,7 +112,6 @@
             <br><br>
             Localizado na cidade histórica de Tiradentes, trata-se de uma associação civil de direito privado, sem fins lucrativos, que almeja com essas ações fomentar outras de natureza semelhante, em pleno exercício de responsabilidade social e cidadania.
           </p>
-          <%= image_tag "fachada-martir.png" %>
-        </div>
+
     </div>
   </div>

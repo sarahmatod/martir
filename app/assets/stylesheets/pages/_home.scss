@@ -1,6 +1,12 @@
-.body {
-  transition: ease 0.5s;
+.martir-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px;
 }
+
+
+
+
 
 .navigation {
   background-color: $offwhite;
@@ -15,19 +21,13 @@
   }
   img {
     height: 64px;
-    padding: 8px 0 8px 0;
+    padding: 8px 0 8px 4px;
   }
 }
 
 .navigation.hide {
   display: none!important;
   //-webkit-transition: all 0.5s ease-in-out;
-}
-
-.container-nav {
-  max-width: 1280px;
-  margin: auto;
-  padding: 0 40px 0 8px;
 }
 
 .hover-underline-animation {
@@ -54,6 +54,13 @@
   transform-origin: bottom left;
 }
 
+.navigation .menu {
+  font-size: 14px;
+}
+
+.navigation .martir-container {
+ padding: 0 40px 0 8px;
+}
 
 .main-title h1 {
   font-size: 25vw;
@@ -64,13 +71,7 @@
   transition: ease 0.5s;
 }
 
-.main-title-t {
-  max-width: 1280px;
-  margin: auto;
-  padding: 40px;
-}
-
-.main-title-t img {
+.main-title-svg {
   transition: ease 0.5s;
   width:100%;
 }
@@ -83,16 +84,11 @@
   //z-index: 2;
 }
 
-.hero-old {
-  background-image: asset-url("martir-hero02.png");
-  mix-blend-mode: darken;
-  background-size: cover;
-  height: 99vh;
-  width:100%;
-  background-position: center bottom;
-  padding: 0;
-  margin-top: -140px;
-}
+
+
+
+
+
 
 .hero img {
   mix-blend-mode: darken;
@@ -101,30 +97,33 @@
   margin-top: -140px;
 }
 
+
+
+
+
+
 .main-subtitle {
-  max-width: 1280px;
-  margin: auto;
-  padding: 128px 40px 0 40px;
+  padding-top: 128px;
 }
 
 .about-martir {
   width:50%;
 }
 
+
+
 .main-about {
-  max-width: 1280px;
-  margin: auto;
-  padding: 40px 40px 0 40px;
   background-attachment: fixed;
 }
 
-.about-tragaluz {
+.about-bandeira {
   width: 50%;
   padding: 0 64px 0 0;
   margin: 0;
   p {
     margin: 0;
     padding: 0;
+    font-style: italic;
   }
 }
 
@@ -137,9 +136,27 @@
   background-position: left bottom;
 }
 
+.about-images-mobile {
+  width:100%;
+  background-image: asset-url("fachada-martir.png");
+  background-size: cover;
+  height: 70vh;
+  background-position: left bottom;
+  padding: 0;
+}
+
+.about-bandeira-mobile {
+  width:100%;
+  padding-top: 36px;
+}
+
 .breath {
   height: 10vh;
 }
+
+
+
+
 
 .loop {
   background-image: asset-url("martir-loop.gif");
@@ -150,6 +167,9 @@
   mix-blend-mode: darken;
   background-position: center;
   }
+
+
+
 
 .artistas-obras {
   //margin-top: 36px;
@@ -163,25 +183,25 @@
   width: 100vw;
 }
 
+
+
+
+
 .box-tragaluz {
-  max-width: 1280px;
-  margin: auto;
-  margin-top: 128px;
-  padding: 40px;
+  padding-top: 80px;
+
     h3 {
       font-family: 'Poppins', sans-serif;
       font-weight: 400;
       font-size: 20px;
-      width: 100%;
-    }
-    img {
-      width: 36%;
-      //border-radius: 16px;
+      width: 50%;
     }
     p {
-      width: 54%;
+      width: 50%;
     }
 }
+
+
 
 
 ///////////// FOOTER //////////////////
@@ -193,19 +213,15 @@
   border-radius: 32px 32px 0 0;
   height: 160px;
   font-size: 12px;
-  align-items:center;
-}
-
-.footer .container {
-  max-width: 1280px;
-  margin: auto;
-  padding: 32px;
-  //height: 400px;
+  align-items: center;
 }
 
 .footer-infos {
+  padding-top: 16px;
   width: 60%;
 }
+
+
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -213,37 +229,10 @@
 //////////////////////////////////////////////////////////////////////////////
 
 
-@media (min-width: 491px) {
-  .main-about-mobile,
-  .about-tragaluz-mobile,
-  .about-images-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 921px) {
-  .artistas-obras-img-mobile {
-    display:none;
-  }
-}
-
 
 @media (max-width: 1280px) {
-  .main-subtitle,
-  .main-about {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
 
-  .main-subtitle {
-    padding-top: 64px;
-  }
-
-  .main-title h1 {
-    font-size: 28vw;
-  }
-
-  .about-tragaluz {
+  .about-bandeira {
     padding-right: 48px;
   }
 
@@ -254,11 +243,11 @@
 }
 
 
+
 @media (max-width: 920px) {
-  .main-subtitle,
-  .main-about {
-    padding-left: 36px;
-    padding-right: 36px;
+
+  .navigation .menu {
+    font-size: 12px;
   }
 
   .main-subtitle {
@@ -269,16 +258,12 @@
     height: 56vh;
   }
 
-  .about-tragaluz {
+  .about-bandeira {
     padding-right: 36px;
   }
 
   .main-about {
     padding-top: 24px;
-  }
-
-  .artistas-obras-img-desktop {
-    display:none;
   }
 
   .artistas-obras img {
@@ -288,67 +273,124 @@
   .loop {
     background-size: 96%;
   }
+
+  .footer-infos {
+    width: 70%;
+  }
+
 }
+
+
+
 
 @media (max-width: 820px) {
   .footer {
     height: 220px;
   }
 
-  .footer .container{
+  .footer .martir-container {
     flex-direction: column;
     align-items: start;
   }
 
   .footer img {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .footer-infos {
     width: 100%;
   }
+
 }
 
+
+
+
 @media (max-width: 768px) {
-  .main-subtitle,
-  .main-about {
-    padding-left: 24px;
-    padding-right: 24px;
+
+  .navigation .menu {
+    font-size: 10px;
   }
+
+  .martir-container {
+    padding: 32px;
+  }
+
+  .navigation .martir-container {
+    padding: 0 32px 0 4px;
+  }
+
 
   .main-subtitle {
     padding-top: 24px;
   }
 
-  .about-images {
-    height: 56vh;
-  }
-
-  .about-tragaluz {
+  .about-bandeira {
     padding-right: 24px;
   }
 
     .hero img {
       margin-top: -80px;
     }
+
+    .box-tragaluz {
+        h3 {
+          width: 36%;
+        }
+        p {
+          width: 60%;
+          font-size: 12px;
+        }
+    }
 }
 
+
+
+
 @media (max-width: 600px) {
+
+  .martir-container {
+    padding: 24px;
+  }
+
+  .navigation .martir-container {
+    padding: 0 24px 0 0;
+  }
+
+  .navigation img {
+    height: 48px;
+    padding-left: 0;
+  }
+
   .footer {
     height: 380px;
+    img {
+      margin-top: 28px;
+    }
   }
 
   .footer-infos {
     flex-direction: column;
   }
+
+  .box-tragaluz {
+    h3 {
+      width: 28%;
+      font-size: 16px;
+    }
+    p {
+      width: 68%;
+    }
 }
+}
+
+
+
 
 @media (max-width: 490px) {
   .main-subtitle {
     flex-direction: column;
     align-items: center;
-    padding-right: 36px;
-    padding-left: 36px;
   }
   .title-mostra {
     width:100%;
@@ -356,31 +398,6 @@
   .about-martir {
     width:100%;
     padding-top: 24px;
-  }
-
-  .main-about,
-  .about-tragaluz,
-  .about-images {
-    display: none;
-  }
-
-  .main-about-mobile {
-    padding-right: 36px;
-    padding-left: 36px;
-  }
-
-  .about-images-mobile {
-    width:100%;
-    background-image: asset-url("fachada-martir.png");
-    background-size: cover;
-    height: 70vh;
-    background-position: left bottom;
-    padding: 0;
-  }
-
-  .about-tragaluz-mobile {
-    width:100%;
-    padding-top: 36px;
   }
 
   .artistas-obras {
@@ -400,6 +417,15 @@
     margin-top: -100px;
     background-attachment: scroll;
     margin-bottom: -70px;
+    }
+
+    .box-tragaluz-content {
+      flex-direction: column;
+      p {
+        width: 100%;
+        margin-top: 32px;
+        font-size: 11px;
+      }
     }
 
 }
