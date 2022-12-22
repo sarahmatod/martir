@@ -9,7 +9,7 @@ before_action :set_artist, only: [:show, :edit, :update]
 
   def create
     @artist = Artist.create(artist_params)
-    redirect_to artists_path
+    redirect_to artist_path(@artist)
   end
 
   def index
