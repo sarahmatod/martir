@@ -9,7 +9,6 @@ before_action :set_artist, only: [:show, :edit, :update]
 
   def create
     @artist = Artist.create(artist_params)
-    redirect_to artist_path(@artist)
   end
 
   def index
@@ -25,6 +24,7 @@ before_action :set_artist, only: [:show, :edit, :update]
 
   def update
     @artist.update(artist_params)
+    @artist = Artist.friendly.find_by!(slug: params[:slug])
     redirect_to artist_path(@artist)
   end
 
@@ -32,7 +32,6 @@ before_action :set_artist, only: [:show, :edit, :update]
 
   def set_artist
     @artist = Artist.friendly.find_by!(slug: params[:slug])
-
   end
 
   def artist_params

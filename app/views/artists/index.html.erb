@@ -90,9 +90,9 @@
             <div class="artist-bio">
               <p><%= simple_format(artist.bio) %></p>
               <br>
-              <%# link_to artist_path(artist) do %>
+              <%= link_to artist_path(artist) do %>
               <span class="btn-vermais">VER MAIS</span> <%= image_tag('arrow.svg') %>
-              <%# end %>
+              <% end %>
             </div>
 
           </div>
