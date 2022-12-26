@@ -4,6 +4,17 @@
       <div class="menu m-0 p-0 d-flex">
         <%= link_to "SOBRE", sobre_path, class:"hover-underline-animation" %>
         <%= link_to "INSTITUTO TRAGALUZ", sobre_path, class:"hover-underline-animation" %>
+
+        <div class="switch-language d-flex nav nav-pills" id="pills-tab" role="tablist">
+          <div class="nav-item" role="presentation">
+            <button class="nav-link hover-underline-animation active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="color:black;">PT</button>
+          </div>
+          <div style="padding-left:4px;"> | </div>
+          <div class="nav-item" role="presentation">
+            <button class="nav-link hover-underline-animation" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="color:black;">EN</button>
+          </div>
+        </div>
+
       </div>
     </div>
 </div>
@@ -23,99 +34,201 @@
   </div>
 
 
-  <div class="martir-container main-subtitle d-flex justify-content-between">
-    <div class="title-mostra">
-      <h2>Mostra de Arte <br>de Tiradentes</h2>
-      <h3>COLEÇÃO TADEU BANDEIRA</h3>
-    </div>
-    <div class="about-martir">
-     <p>Localizado na cidade histórica de Tiradentes, Martir foi especialmente delineado para acolher importantes exposições, como a mostra intitulada "Arte Mineira Contemporânea”. A exposição conta com obras de prestigiosos e talentosos artistas, parte da coleção "Tadeu Bandeira”, constituída a partir do olhar do colecionador para a produção mineira a partir dos anos 1970. O espaço pertence ao Instituto Tragaluz, uma associação civil de direito privado, sem fins lucrativos, que almeja com essas ações fomentar outras de natureza semelhante.</p>
-    </div>
-  </div>
 
-  <div class="martir-container main-about d-none d-sm-flex justify-content-between align-items-end">
-    <div class="about-bandeira">
-      <p>"Em 1972, fui até a rodoviária e peguei um ônibus até Ouro Preto para conhecer Nello Nuno. Toquei a campainha da sua casa no Largo do Rosário, me apresentei como um simples colegial dos Irmãos Maristas, falei do meu interesse em adquirir um de seus quadros, ainda que com pequeno dinheiro de mesada. Compreendendo a situação, ele me recebeu gentilmente e trouxe até a mim um lindo pôr do sol em Ouro Preto, indagando se estariam bem oito parcelas. Tal pintura integra essa coleção ora aberta à visitação pública."
-        <br><br> <span style="font-style:normal">— Tadeu Bandeira</span>
-      </p>
-    </div>
-    <div class="about-images">
-    </div>
-  </div>
+  <div class="tab-content p-0 mt-3" id="pills-tabContent">
+  <%# conteudo em portugues %>
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+      <div class="martir-container main-subtitle d-flex justify-content-between">
+        <div class="title-mostra">
+          <h2>Mostra de Arte <br>de Tiradentes</h2>
+          <h3>COLEÇÃO TADEU BANDEIRA</h3>
+        </div>
+        <div class="about-martir">
+          <p>Localizado na cidade histórica de Tiradentes, Martir foi especialmente delineado para acolher importantes exposições, como a mostra intitulada "Arte Mineira Contemporânea”. A exposição conta com obras de prestigiosos e talentosos artistas, parte da coleção "Tadeu Bandeira”, constituída a partir do olhar do colecionador para a produção mineira a partir dos anos 1970. O espaço pertence ao Instituto Tragaluz, uma associação civil de direito privado, sem fins lucrativos, que almeja com essas ações fomentar outras de natureza semelhante.</p>
+        </div>
+      </div>
+
+      <div class="martir-container main-about d-none d-sm-flex justify-content-between align-items-end">
+        <div class="about-bandeira">
+          <p>"Em 1972, fui até a rodoviária e peguei um ônibus até Ouro Preto para conhecer Nello Nuno. Toquei a campainha da sua casa no Largo do Rosário, me apresentei como um simples colegial dos Irmãos Maristas, falei do meu interesse em adquirir um de seus quadros, ainda que com pequeno dinheiro de mesada. Compreendendo a situação, ele me recebeu gentilmente e trouxe até a mim um lindo pôr do sol em Ouro Preto, indagando se estariam bem oito parcelas. Tal pintura integra essa coleção ora aberta à visitação pública."
+            <br><br> <span style="font-style:normal">— Tadeu Bandeira</span>
+          </p>
+        </div>
+        <div class="about-images">
+        </div>
+      </div>
+
+      <%# -------- mobile --------  %>
+      <div class="martir-container d-sm-none main-about-mobile d-flex flex-column justify-content-between align-items-center">
+        <div class="about-images-mobile">
+        </div>
+        <div class="about-bandeira-mobile">
+          <p>"Em 1972, fui até a rodoviária e peguei um ônibus até Ouro Preto para conhecer Nello Nuno. Toquei a campainha da sua casa no Largo do Rosário, me apresentei como um simples colegial dos Irmãos Maristas, falei do meu interesse em adquirir um de seus quadros, ainda que com pequeno dinheiro de mesada. Compreendendo a situação, ele me recebeu gentilmente e trouxe até a mim um lindo pôr do sol em Ouro Preto, indagando se estariam bem oito parcelas. Tal pintura integra essa coleção ora aberta à visitação pública."
+            <br><br> <span style="font-style:normal">— Tadeu Bandeira</span>
+          </p>
+        </div>
+      </div>
+      <%# ------------------------  %>
 
 
-  <%# -------- mobile --------  %>
-
-  <div class="martir-container d-sm-none main-about-mobile d-flex flex-column justify-content-between align-items-center">
-    <div class="about-images-mobile">
-    </div>
-    <div class="about-bandeira-mobile">
-      <p>INSTITUTO TRAGALUZ <br><br>
-      Localizado na cidade histórica de Tiradentes, Martir é um espaço do Instituto Tragaluz, especialmente delineado para acolher importantes exposições, como a mostra intitulada "Arte Mineira Contemporânea”. A exposição conta com obras de prestigiosos e talentosos artistas, parte da coleção "Tadeu Bandeira”, constituída a partir do olhar do colecionador para a produção mineira a partir dos anos 1970. <br> <br>
-      O Instituto colabora de forma prática e atuante num processo educativo multiforme com mostras artísticas e culturais, exposições, palestras, debates e uma série de iniciativas de cunho social e educacional com ações desde a Primeira Infância. Trata-se de uma associação civil de direito privado, sem fins lucrativos, que almeja com essas ações fomentar outras de natureza semelhante, em pleno exercício de responsabilidade social e cidadania.
-      </p></div>
-  </div>
-
-  <%# ------------------------  %>
-
-  <div class="breath"></div>
+      <div class="breath"></div>
 
 
-  <div class="d-flex loop justify-content-center align-items-center">
-  </div>
+      <div class="d-flex loop justify-content-center align-items-center">
+      </div>
 
-  <div class="artistas-obras bg-cream d-flex justify-content-center align-items-center">
-    <%= image_tag "artistas-obras.svg", class:"d-none d-lg-block artistas-obras-img-desktop" %>
-    <%= image_tag "artistas-obras-mobile.svg", class:"d-block d-lg-none artistas-obras-img-mobile" %>
-  </div>
+      <div class="artistas-obras bg-cream d-flex justify-content-center align-items-center">
+        <%= image_tag "artistas-obras.svg", class:"d-none d-lg-block artistas-obras-img-desktop" %>
+        <%= image_tag "artistas-obras-mobile.svg", class:"d-block d-lg-none artistas-obras-img-mobile" %>
+      </div>
 
-  <div class="martir-container accordion accordion-flush" id="accordionFlushExample">
+      <div class="martir-container accordion accordion-flush" id="accordionFlushExample">
 
-    <% @artists.each do |artist| %>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-heading<%= artist.id %>">
-        <button class="artist-line accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<%= artist.id %>" aria-expanded="false" aria-controls="flush-collapse<%= artist.id %>">
-          <%= artist.name %>
-        </button>
-      </h2>
-      <div id="flush-collapse<%= artist.id %>" class="accordion-collapse collapse" aria-labelledby="flush-heading<%= artist.id %>" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body p-0 pt-4 pb-4 d-flex justify-content-between">
-            <% if artist.photos.count >= 1 %>
-              <div class="artist-works d-flex align-items-start">
-                <% artist.photos.each do |photo| %>
-                <%= cl_image_tag photo.key %>
+        <% @artists.each do |artist| %>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading<%= artist.id %>">
+            <button class="artist-line accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<%= artist.id %>" aria-expanded="false" aria-controls="flush-collapse<%= artist.id %>">
+              <%= artist.name %>
+            </button>
+          </h2>
+          <div id="flush-collapse<%= artist.id %>" class="accordion-collapse collapse" aria-labelledby="flush-heading<%= artist.id %>" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body p-0 pt-4 pb-4 d-flex justify-content-between">
+                <% if artist.photos.count >= 1 %>
+                  <div class="artist-works d-flex align-items-start">
+                    <% artist.photos.each do |photo| %>
+                    <%= cl_image_tag photo.key %>
+                    <% end %>
+                  </div>
                 <% end %>
+                <div class="artist-bio">
+                  <p><%= simple_format(artist.bio) %></p>
+                  <br>
+                  <%= link_to artist_path(artist) do %>
+                  <span class="btn-vermais">VER MAIS</span> <%= image_tag('arrow.svg') %>
+                  <% end %>
+                </div>
+
               </div>
-            <% end %>
-            <div class="artist-bio">
-              <p><%= simple_format(artist.bio) %></p>
-              <br>
-              <%= link_to artist_path(artist) do %>
-              <span class="btn-vermais">VER MAIS</span> <%= image_tag('arrow.svg') %>
-              <% end %>
-            </div>
 
           </div>
+        </div>
+        <% end %>
+
 
       </div>
+
+      <div class="martir-container box-tragaluz">
+        <div class="d-flex justify-content-between box-tragaluz-content bg-cream p-4 p-sm-5" style="border-radius:24px;">
+
+            <h3>INSTITUTO <br> TRAGALUZ</h3>
+
+              <p>
+                Como formar ideias, criar, criticar, crescer e, se necessário, transformá-las em "conhecimento"? E como "conhecer” se não estivermos inseridos em um processo educativo contínuo e multiforme, utilizando os mais diversos e diferentes recursos?
+                <br><br>
+                O Instituto Tragaluz colabora de forma prática e atuante com mostras artísticas e culturais, exposições, palestras, debates e uma série de iniciativas de cunho social e educacional com ações desde a Primeira Infância.
+                <br><br>
+                Localizado na cidade histórica de Tiradentes, trata-se de uma associação civil de direito privado, sem fins lucrativos, que almeja com essas ações fomentar outras de natureza semelhante, em pleno exercício de responsabilidade social e cidadania.
+              </p>
+
+        </div>
+      </div>
+
     </div>
-    <% end %>
+  <%# conteudo em ingles %>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="martir-container main-subtitle d-flex justify-content-between">
+        <div class="title-mostra">
+          <h2>Tiradentes <br>Art Show</h2>
+          <h3>TADEU BANDEIRA COLLECTION</h3>
+        </div>
+        <div class="about-martir">
+          <p>Located in the historic city of Tiradentes, Martir was specially designed to host important exhibitions, such as the exhibition entitled "Arte Mineira Contemporânea – Minas Gerais Contemporary Art". The exhibition features works of art by prestigious and talented artists, which are part of the "Tadeu Bandeira" collection, based on the collector's view of Minas Gerais art production from the 1970s onwards. Martir belongs to Tragaluz, a non-profit institute, whose actions aim to encourage others with a similar nature.</p>
+        </div>
+      </div>
 
-
-  </div>
-
-  <div class="martir-container box-tragaluz">
-    <div class="d-flex justify-content-between box-tragaluz-content bg-cream p-4 p-sm-5" style="border-radius:24px;">
-
-        <h3>INSTITUTO <br> TRAGALUZ</h3>
-
-          <p>
-            Como formar ideias, criar, criticar, crescer e, se necessário, transformá-las em "conhecimento"? E como "conhecer” se não estivermos inseridos em um processo educativo contínuo e multiforme, utilizando os mais diversos e diferentes recursos?
-            <br><br>
-            O Instituto Tragaluz colabora de forma prática e atuante com mostras artísticas e culturais, exposições, palestras, debates e uma série de iniciativas de cunho social e educacional com ações desde a Primeira Infância.
-            <br><br>
-            Localizado na cidade histórica de Tiradentes, trata-se de uma associação civil de direito privado, sem fins lucrativos, que almeja com essas ações fomentar outras de natureza semelhante, em pleno exercício de responsabilidade social e cidadania.
+      <div class="martir-container main-about d-none d-sm-flex justify-content-between align-items-end">
+        <div class="about-bandeira">
+          <p>"In 1972, I went to the bus station and took a bus to Ouro Preto to meet Nello. I rang the doorbell of his house in Largo do Rosario, introduced myself as a simple schoolboy, spoke of my interest in purchasing one of his paintings, even if that meant to spend my allowance money. Acknowledging the situation, he received me kindly and brought me a beautiful sunset in Ouro Preto painting, asking if eight installments would be fine. This painting is part of this collection now open to the public."
+            <br><br> <span style="font-style:normal">— Tadeu Bandeira</span>
           </p>
+        </div>
+        <div class="about-images">
+        </div>
+      </div>
 
+      <%# -------- mobile --------  %>
+      <div class="martir-container d-sm-none main-about-mobile d-flex flex-column justify-content-between align-items-center">
+        <div class="about-images-mobile">
+        </div>
+        <div class="about-bandeira-mobile">
+          <p>"In 1972, I went to the bus station and took a bus to Ouro Preto to meet Nello. I rang the doorbell of his house in Largo do Rosario, introduced myself as a simple schoolboy, spoke of my interest in purchasing one of his paintings, even if that meant to spend my allowance money. Acknowledging the situation, he received me kindly and brought me a beautiful sunset in Ouro Preto painting, asking if eight installments would be fine. This painting is part of this collection now open to the public."
+            <br><br> <span style="font-style:normal">— Tadeu Bandeira</span>
+        </div>
+      </div>
+      <%# ------------------------  %>
+
+
+      <div class="breath"></div>
+
+
+      <div class="d-flex loop justify-content-center align-items-center">
+      </div>
+
+      <div class="artistas-obras bg-cream d-flex justify-content-center align-items-center">
+        <%= image_tag "artistas-obras.svg", class:"d-none d-lg-block artistas-obras-img-desktop" %>
+        <%= image_tag "artistas-obras-mobile.svg", class:"d-block d-lg-none artistas-obras-img-mobile" %>
+      </div>
+
+      <div class="martir-container accordion accordion-flush" id="accordionFlushExample">
+
+        <% @artists.each do |artist| %>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading<%= artist.id %>">
+            <button class="artist-line accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<%= artist.id %>" aria-expanded="false" aria-controls="flush-collapse<%= artist.id %>">
+              <%= artist.name %>
+            </button>
+          </h2>
+          <div id="flush-collapse<%= artist.id %>" class="accordion-collapse collapse" aria-labelledby="flush-heading<%= artist.id %>" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body p-0 pt-4 pb-4 d-flex justify-content-between">
+                <% if artist.photos.count >= 1 %>
+                  <div class="artist-works d-flex align-items-start">
+                    <% artist.photos.each do |photo| %>
+                    <%= cl_image_tag photo.key %>
+                    <% end %>
+                  </div>
+                <% end %>
+                <div class="artist-bio">
+                  <p><%= simple_format(artist.bio) %></p>
+                  <br>
+                  <%= link_to artist_path(artist) do %>
+                  <span class="btn-vermais">MORE</span> <%= image_tag('arrow.svg') %>
+                  <% end %>
+                </div>
+
+              </div>
+
+          </div>
+        </div>
+        <% end %>
+
+
+      </div>
+
+      <div class="martir-container box-tragaluz">
+        <div class="d-flex justify-content-between box-tragaluz-content bg-cream p-4 p-sm-5" style="border-radius:24px;">
+
+            <h3>TRAGALUZ <br> INSTITUTE</h3>
+
+              <p>
+                How to form ideas, create, criticize, grow and, if necessary, transform them into knowledge? And how to know if we are not part of a continuous and multiform educational process, using the most diverse and different resources?
+                <br><br>
+                Tragaluz Institute collaborates in a practical an active way in this scenario with artistic and cultural pieces of art, exhibitions, lectures, debates and a series of social and educational initiatives with actions since earty childhood.
+                <br><br>
+                Located in the historic city of Tiradentes, it is a non-profit institute, whose actions aim to encourage other with a similar neture, in full exercise of social responsibility and citizenship.
+              </p>
+
+        </div>
+      </div>
     </div>
-  </div>
+</div>

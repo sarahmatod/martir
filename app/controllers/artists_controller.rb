@@ -24,8 +24,6 @@ before_action :set_artist, only: [:show, :edit, :update]
 
   def update
     @artist.update(artist_params)
-    @artist = Artist.friendly.find_by!(slug: params[:slug])
-    redirect_to artist_path(@artist)
   end
 
   private
