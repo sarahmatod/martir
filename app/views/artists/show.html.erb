@@ -18,10 +18,24 @@
 
     <div class="d-none d-sm-flex row pt-3">
       <div class="col-sm-5 col-lg-6 artist-menu">
-          <% if @artist.photos.count >= 1 %>
-          <div class="d-none d-sm-block artist-menu-title">obras</div>
-          <% else %>
-          <div class="artist-menu-title"></div>
+          <% if @artist.photos.count > 1 %>
+            <div class="d-none d-sm-block artist-menu-title">
+              <% if @artist.detail = true %>
+                detalhes de obras
+              <% else %>
+                obras
+              <% end %>
+            </div>
+          <% elsif @artist.photos.count == 1 %>
+            <div class="d-none d-sm-block artist-menu-title">
+              <% if @artist.detail = true %>
+                detalhe de obra
+              <% else %>
+                obra
+              <% end %>
+            </div>
+          <% elsif @artist.photos.count == 0 %>
+            <div class="artist-menu-title"></div>
           <% end %>
       </div>
       <div class="col-sm-6 col-lg-5 offset-1 artist-menu d-flex justify-content-between nav nav-pills mb-3" id="pills-tab" role="tablist">
