@@ -12,8 +12,8 @@ before_action :set_artist, only: [:show, :edit, :update]
   end
 
   def index
-    #details = Artist.where(slug: ["arlindo-daibert", "fernando-lucchesi", "jorge-fonseca", "manfredo-de-souzanetto", "marcos-coelho-benjamim", "nello-nuno", "paulo-nazareth", "pedro-neves", "ricardo-homem", "rivane-neuschvander", "ivan-marquetti", "ana-horta", "cao-guimaraes", "sara-ramo"])
-    #details.each { |artist| artist.detail = true, artist.save }
+    details = Artist.where(slug: ["arlindo-daibert", "fernando-lucchesi", "jorge-fonseca", "manfredo-de-souzanetto", "marcos-coelho-benjamim", "nello-nuno", "paulo-nazareth", "pedro-neves", "ricardo-homem", "rivane-neuschvander", "ivan-marquetti", "ana-horta", "cao-guimaraes", "sara-ramo"])
+    details.each { |artist| artist.detail = true, artist.save }
 
     @everybody = Artist.all
     @artists = @everybody.sort_alphabetical_by(&:name)
