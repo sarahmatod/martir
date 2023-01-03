@@ -17,6 +17,18 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  animation: fadeInAnimation ease 0.8s;
+}
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0;
+      transform: translateY(16px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 h2 {

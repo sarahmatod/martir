@@ -103,13 +103,10 @@
                 <% end %>
                 <div class="artist-bio">
                   <p><%= simple_format(artist.bio) %></p>
-                  <% if artist.photos.count >= 1 %>
-                    <% if artist.detail == true %>
+                  <% if artist.photos.count >= 1 && artist.detail == true %>
                       <br>
                       <span style="font-style: italic; font-size: 11px; text-transform:uppercase;">* detalhe de obra</span>
                       <br>
-                    <% else %>
-                    <% end %>
                   <% end %>
                   <br>
                   <%= link_to artist_path(artist) do %>
